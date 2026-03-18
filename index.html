@@ -849,16 +849,20 @@
                     <div class="source-label">gov.uk GIAS Database → Zoho CRM</div>
                 </div>
                 
+                <div class="filter-interface" style="margin-bottom: 1rem; padding: 10px; background: rgba(43, 77, 175, 0.1); border-radius: 8px; font-size: 0.9rem; color: var(--zoho-blue);">
+                    <strong>Filter: Key Stage 3 & 4 ✓ | Secondary Schools ✓ | Student Count: 500+</strong>
+                </div>
+                
                 <table class="schools-table">
                     <thead>
                         <tr>
                             <th>School Name</th>
                             <th>Type</th>
-                            <th>Key Stage</th>
                             <th>Students</th>
-                            <th>VP Name</th>
+                            <th>Key Contact</th>
+                            <th>Job Title</th>
                             <th>Email</th>
-                            <th>CRM Status</th>
+                            <th>Phone</th>
                         </tr>
                     </thead>
                     <tbody id="schoolsTableBody">
@@ -868,7 +872,7 @@
             </div>
             
             <div style="margin-top: 1rem; font-weight: bold; color: var(--zoho-blue);">
-                247 schools imported → Zoho CRM in 3 minutes
+                127 KS3/4 schools → 381 decision makers imported to Zoho CRM
             </div>
         </div>
 
@@ -879,26 +883,26 @@
             
             <div class="school-focus">🎯 St Columb's College</div>
             
+            <div style="margin-bottom: 1rem; padding: 15px; background: rgba(43, 77, 175, 0.05); border-radius: 8px; text-align: left;">
+                <div style="font-size: 1rem; font-weight: bold; margin-bottom: 10px; color: var(--zoho-blue);">Who books KS3/4 workshops:</div>
+                <div style="margin-bottom: 8px;">🎯 <strong>SENCO</strong> (Special Educational Needs Coordinator) — Books wellbeing workshops</div>
+                <div style="margin-bottom: 8px;">🎯 <strong>Head of Year</strong> (Years 9, 10, 11) — Influences KS3/4 programme</div>
+                <div style="margin-bottom: 8px;">🎯 <strong>Vice Principal</strong> — Budget holder, final decision</div>
+                <div style="margin-bottom: 8px;">🎯 <strong>Pastoral Care Lead</strong> — Identifies student needs</div>
+                <div style="margin-bottom: 8px;">❌ <s><strong>Principal</strong></s> (Too busy, delegates)</div>
+                <div style="margin-bottom: 8px;">❌ <s><strong>Admin staff</strong></s> (No budget authority)</div>
+            </div>
+            
             <div class="champions-grid">
-                <div class="champion-card zoho-contact-card">
-                    <div class="champion-status">❌</div>
-                    <div class="champion-info">
-                        <div class="champion-name">Mr. Fintan Murphy</div>
-                        <div class="champion-role">Principal</div>
-                        <div class="champion-contact">f.murphy@stcolumbs.derry.sch.uk | 028 7126 4540</div>
-                        <div class="champion-value champion-reject">Too busy - delegator</div>
-                    </div>
-                </div>
-                
                 <div class="champion-card zoho-contact-card">
                     <div class="champion-status">✅</div>
                     <div class="champion-info">
                         <div class="champion-name">Mrs. Sarah McCallion</div>
                         <div class="champion-role">Vice Principal</div>
                         <div class="champion-contact">s.mccallion@stcolumbs.derry.sch.uk | 028 7126 4540</div>
-                        <div class="champion-value">Budget holder, decision maker</div>
+                        <div class="champion-value">Budget holder, final decision</div>
                         <div class="champion-tags">
-                            <span class="champion-tag">Key Stage 4</span>
+                            <span class="champion-tag">KS3/4</span>
                             <span class="champion-tag">Budget Holder</span>
                         </div>
                     </div>
@@ -913,10 +917,10 @@
                     <div class="champion-info">
                         <div class="champion-name">Mr. Declan O'Hara</div>
                         <div class="champion-role">Head of Year 10</div>
-                        <div class="champion-contact">d.ohara@stcolumbs.derry.sch.uk | 028 7126 4540</div>
-                        <div class="champion-value">Influencer, wellbeing champion</div>
+                        <div class="champion-contact">d.ohara@oakgrove.derry.sch.uk | 028 7127 1456</div>
+                        <div class="champion-value">Influences KS3/4 programme</div>
                         <div class="champion-tags">
-                            <span class="champion-tag">Key Stage 4</span>
+                            <span class="champion-tag">KS3/4</span>
                             <span class="champion-tag">Influencer</span>
                         </div>
                     </div>
@@ -931,11 +935,11 @@
                     <div class="champion-info">
                         <div class="champion-name">Ms. Claire Doherty</div>
                         <div class="champion-role">SENCO</div>
-                        <div class="champion-contact">c.doherty@stcolumbs.derry.sch.uk | 028 7126 4540</div>
-                        <div class="champion-value">Books external workshops</div>
+                        <div class="champion-contact">c.doherty@lisneal.derry.sch.uk | 028 7134 5621</div>
+                        <div class="champion-value">Books wellbeing workshops</div>
                         <div class="champion-tags">
-                            <span class="champion-tag">Key Stage 4</span>
-                            <span class="champion-tag">Budget Holder</span>
+                            <span class="champion-tag">KS3/4</span>
+                            <span class="champion-tag">Workshop Booker</span>
                         </div>
                     </div>
                     <div class="social-icons">
@@ -945,8 +949,8 @@
                 </div>
             </div>
             
-            <div class="zoho-sync-note">
-                All contacts auto-synced to Zoho CRM with tags and deal stage
+            <div style="margin-top: 1rem; font-weight: bold; color: var(--zoho-blue);">
+                Found 3 decision makers at St Columb's College who book KS3/4 workshops
             </div>
         </div>
 
@@ -1117,16 +1121,16 @@
         let currentSlide = 0;
         const totalSlides = 6;
 
-        // School data for slide 2 with CRM status
+        // School data for slide 2 with KS3/4 focus and decision makers
         const schoolData = [
-            ['St Columb\'s College', 'Catholic', 'KS3-5', '847', 'Mrs. Sarah McCallion', 's.mccallion@stcolumbs.derry.sch.uk', '✅ New Lead'],
-            ['Oakgrove Integrated', 'Integrated', 'KS3-5', '1,234', 'Mr. David Stewart', 'd.stewart@oakgrove.derry.sch.uk', '✅ New Lead'],
-            ['Lisneal College', 'Protestant', 'KS3-5', '952', 'Mrs. Jennifer Clarke', 'j.clarke@lisneal.derry.sch.uk', '✅ New Lead'],
-            ['Foyle College', 'Protestant', 'KS3-5', '1,186', 'Dr. Michael Thompson', 'm.thompson@foyle.derry.sch.uk', '✅ New Lead'],
-            ['St Cecilia\'s College', 'Catholic', 'KS3-5', '743', 'Mrs. Mary O\'Donnell', 'm.odonnell@stcecilias.derry.sch.uk', '✅ New Lead'],
-            ['Lumen Christi College', 'Catholic', 'KS3-5', '689', 'Mr. Patrick Doherty', 'p.doherty@lumen.derry.sch.uk', '✅ New Lead'],
-            ['Thornhill College', 'Catholic', 'KS3-5', '567', 'Sister Margaret Kelly', 's.kelly@thornhill.derry.sch.uk', '✅ New Lead'],
-            ['St Mary\'s College', 'Catholic', 'KS3-5', '812', 'Mrs. Catherine McBride', 'c.mcbride@stmarys.derry.sch.uk', '✅ New Lead']
+            ['St Columb\'s College', 'Catholic Secondary', '1,247', 'Mrs Sarah McCallion', 'Vice Principal', 's.mccallion@stcolumbs.derry.sch.uk', '028 7126 4540'],
+            ['Oakgrove Integrated', 'Integrated Secondary', '847', 'Mr Declan O\'Hara', 'Head of Year 10', 'd.ohara@oakgrove.derry.sch.uk', '028 7127 1456'],
+            ['Lisneal College', 'Girls Grammar', '692', 'Ms Claire Doherty', 'SENCO', 'c.doherty@lisneal.derry.sch.uk', '028 7134 5621'],
+            ['Foyle College', 'Boys Grammar', '1,089', 'Mrs Emma Bradley', 'Pastoral Care Lead', 'e.bradley@foyle.derry.sch.uk', '028 7132 7890'],
+            ['St Cecilia\'s College', 'Catholic Secondary', '743', 'Mr James McCourt', 'Head of Year 9', 'j.mccourt@stcecilias.derry.sch.uk', '028 7126 3210'],
+            ['Lumen Christi College', 'Catholic Secondary', '689', 'Mrs Patricia Kelly', 'SENCO', 'p.kelly@lumen.derry.sch.uk', '028 7135 4567'],
+            ['Thornhill College', 'Catholic Grammar', '567', 'Mrs Louise McGrath', 'Vice Principal', 'l.mcgrath@thornhill.derry.sch.uk', '028 7126 7890'],
+            ['St Mary\'s College', 'Catholic Grammar', '812', 'Mr Seamus O\'Brien', 'Head of Year 11', 's.obrien@stmarys.derry.sch.uk', '028 7134 2345']
         ];
 
         function updateSlide() {
@@ -1163,12 +1167,7 @@
                     
                     school.forEach((cellData, cellIndex) => {
                         const cell = document.createElement('td');
-                        if (cellIndex === school.length - 1) {
-                            // Last column is CRM status
-                            cell.innerHTML = `<span class="zoho-status">${cellData}</span>`;
-                        } else {
-                            cell.textContent = cellData;
-                        }
+                        cell.textContent = cellData;
                         cell.classList.add('animate-row');
                         row.appendChild(cell);
                     });
